@@ -151,7 +151,10 @@
 }
 
 .action {
-  margin-top: 1.25rem;
+  display: flex;
+  width: min(100%, 22rem);
+  margin: 1.25rem auto 0;
+  padding-left: calc(1.2rem + 0.14em);
 }
 
 .back {
