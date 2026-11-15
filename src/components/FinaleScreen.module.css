@@ -1,0 +1,70 @@
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.rule {
+  width: 3.2rem;
+  height: 1px;
+  margin-bottom: 1.4rem;
+  background: var(--gold);
+  animation: rise 0.8s ease both;
+}
+
+.letter {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  max-width: 36rem;
+}
+
+.letter p {
+  margin: 0;
+  color: rgba(248, 241, 232, 0.94);
+  font-family: var(--serif);
+  font-size: clamp(1.22rem, 4.7vw, 1.55rem);
+  font-weight: 500;
+  line-height: 1.5;
+  text-wrap: pretty;
+  animation: rise 0.9s ease both;
+}
+
+.signature {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-top: 0.35rem;
+  animation: rise 0.9s ease both;
+}
+
+.signature p {
+  color: var(--gold);
+  font-size: clamp(1.35rem, 5vw, 1.7rem);
+  font-style: italic;
+  line-height: 1.25;
+}
+
+.signature p:last-child {
+  font-size: clamp(1.6rem, 6vw, 2rem);
+  font-style: normal;
+  letter-spacing: -0.02em;
+}
+
+.back {
+  margin-top: 1.6rem;
+  animation: rise 0.9s ease both;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

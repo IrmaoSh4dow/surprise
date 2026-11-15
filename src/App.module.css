@@ -1,0 +1,23 @@
+.stage {
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.in {
+  opacity: 1;
+  transform: none;
+}
+
+.out {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+.reduced,
+.reduced.in,
+.reduced.out {
+  transition: none;
+  transform: none;
+}

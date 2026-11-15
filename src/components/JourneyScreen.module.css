@@ -1,0 +1,70 @@
+.header {
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0.45rem 0 0;
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 9vw, 3.6rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.progressCopy {
+  margin: 0.7rem 0 0;
+  color: rgba(248, 241, 232, 0.78);
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+.track {
+  height: 2px;
+  margin: 0.95rem auto 0;
+  max-width: 12rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(199, 164, 106, 0.24);
+}
+
+.track span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--rose), var(--gold));
+}
+
+.invite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.95rem;
+  margin-top: 1.4rem;
+  padding: 1.15rem 1rem 1.2rem;
+  border: 1px solid rgba(199, 164, 106, 0.4);
+  border-radius: 18px;
+  background: rgba(20, 6, 10, 0.22);
+  text-align: center;
+}
+
+.invite p {
+  margin: 0;
+  max-width: 28ch;
+  color: var(--ivory);
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.35;
+}

@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.35rem;
+}
+
+.label {
+  margin-bottom: 0.8rem;
+  color: rgba(248, 241, 232, 0.74);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(199, 164, 106, 0.55);
+  border-radius: 0;
+  background: transparent;
+  color: var(--ivory);
+  font-family: var(--serif);
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  caret-color: var(--gold);
+  padding: 0.45rem 0.25rem 0.55rem;
+}
+
+.input::placeholder {
+  color: rgba(248, 241, 232, 0.42);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: none;
+}
+
+.input:focus-visible {
+  outline: none;
+  border-bottom-color: var(--gold);
+  box-shadow: 0 1px 0 var(--gold);
+}
+
+.submit {
+  max-width: none;
+  margin-top: 1.15rem;
+}
+
+.hint {
+  min-height: 1.45em;
+  margin: 0.9rem 0 0;
+  color: #f3d5d8;
+  font-family: var(--serif);
+  font-size: 1.12rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.45;
+  text-align: center;
+  text-wrap: pretty;
+}
+
+.hint:empty {
+  min-height: 0;
+  margin: 0;
+}
